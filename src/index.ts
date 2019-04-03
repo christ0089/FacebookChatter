@@ -29,14 +29,14 @@ app.get("", (req, res) => {
  *
  * @class Chatbosts Api
  * @method post
- * @param req {Request} The express request object.
+ * @param req {Request} The express request object.git 
  * @param res {Response} The express response object.
  * @param next {NextFunction} The next function to continue.
  * Esta solo se usa para crear el appstate.json de init
  */
 app.get("/login", (req, res) => {
 
-    login({ email: "brixar10@gmail.com", password: "Arma2012" }, (err, api) => {
+    login({ email: "", password: "" }, (err, api) => {
         if (err) {
             return console.error(err)
         };
@@ -119,6 +119,8 @@ app.get("/message", (req, res) => {
         res.send("Hi :)");
     });
 })
+ 
+app.get
 
 
 app.get("/search/:query", (req, res) => {
